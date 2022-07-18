@@ -1,0 +1,38 @@
+
+body{
+  background-color: #F8F9D7;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #C4D7E0;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+header {
+  background-color: #C9BBCF;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+  }

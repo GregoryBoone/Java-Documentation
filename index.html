@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	  <main id="main-doc">
+      <header>
+        <nav id="nav-bar">
+          <a href="#Introduction">Introduction</a>
+          <a href="#Hello_World">Hello World</a>
+          <a href="#Variables">Variables</a>
+          <a href="#Data_Types">Data Types</a>
+          <a href="#If_Else">If..Else Statements</a>
+          <a href="#Loops">Loops</a>
+          <a href="#Methods">Methods/Functions</a>
+          <a href="#Classes">Classes</a>
+        </nav>
+      </header>
+
+      <h1>Java Documentation</h1>
+      <div id="Introduction">
+        <h3>Introduction</h3>
+        <p>
+          Java is a compiled, object-oriented, highly portable programming language. <br><br>
+
+          Java is statically typed and features a similar syntax to C. It comes with a large library of readily usable functions, the Java Software Development Kit (SDK). <br><br>
+
+          Programs are compiled only once ahead of time into a proprietary byte code and package format that runs inside the Java Virtual Machine (JVM). The JVM is available across many platforms, which allows Java programs to run almost everywhere without the need to be compiled or packaged again.
+        </p>
+      </div>
+
+      <div id="Hello_World">
+        <h3>Hello World</h3>
+        <p>To get started with writing Java, open the Scratchpad and write your first "Hello world" Java code:</p>
+        <code>class HelloWorld {
+          System.out.println("Hello World");
+        }</code>
+      </div>
+
+      <div id="Variables">
+        <h3>Variables</h3>
+        <p>
+          Variables are containers for storing data values.
+        </p>
+        <p>To create a variable, you must specify the type and assign it a value:</p>
+        <code>type variableName = value;</code>
+        <p>Where type is one of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.</p>
+      </div>
+
+      <div id="Data_Types">
+        <h3>Data Types</h3>
+        <p>Data types are divided into two groups: </p>
+        <ul>
+          <li>Primitive data types - includes byte, short, int, long, float, double, boolean and char</li>
+          <li>Non-primitive data types - such as String, Arrays and Classes</li>
+        </ul>
+        <p>A primitive data type specifies the size and type of variable values, and it has no additional methods.</p>
+        <br>
+        <h4>String</h4>
+        <p>The String class represents character strings. All string literals in Java programs, such as "abc", are implemented as instances of this class.
+            Strings are constant; their values cannot be changed after they are created. String buffers support mutable strings. Because String objects are immutable they can be shared. For example:
+
+                 String str = "abc";
+
+            is equivalent to:
+
+                 char data[] = {'a', 'b', 'c'};
+                 String str = new String(data);</p>
+      </div>
+
+      <div id="If_Else">
+        <h3>If...else Statements</h3>
+        <p>Java has the following conditional statements: </p>
+        <ul>
+          <li>Use <strong>if</strong> to specify a block of code to be executed, if a specified condition is true</li>
+          <li>Use <strong>else</strong> to specify a block of code to be executed, if the same condition is false</li>
+          <li>Use <strong>else if</strong> to specify a new condition to test, if the first condition is false</li>
+          <li>Use <strong>switch</strong> to specify many alternative blocks of code to be executed</li>
+        </ul>
+      </div>
+
+      <div id="Loops">
+        <h3>Loops</h3>
+        <p>The <strong>while</strong> loop loops through a block of code as long as a specified condition is true: </p>
+        <code>while (condition) {
+              // code block to be executed
+        }</code>
+        <br>
+        <p>The <strong>do/while</strong> loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+        <code>do {
+            // code block to be executed
+          }
+          while (condition);
+        </code>
+        <p>When you know exactly how many times you want to loop through a block of code, use the <strong>for</strong> loop instead of a while loop:</p>
+        <code>for (statement 1; statement 2; statement 3) {
+          // code block to be executed
+          }
+        </code>
+
+      </div>
+
+      <div id="Methods">
+        <h3>Methods</h3>
+        <p>A method is a block of code which only runs when it is called.<br><br>
+
+          You can pass data, known as parameters, into a method.<br><br>
+
+          Methods are used to perform certain actions, and they are also known as functions.<br><br>
+
+          Why use methods? To reuse code: define the code once, and use it many times.
+        </p>
+        <code>public class Main {
+              static void myMethod() {
+              // code to be executed
+              }
+        }
+        </code>
+        <p>To call a method in Java, write the method's name followed by two parentheses () and a semicolon; </p>
+        <code>public class Main {
+              static void myMethod() {
+                System.out.println("I just got executed!");
+              }
+
+              public static void main(String[] args) {
+                myMethod();
+              }
+            }
+
+            // Outputs "I just got executed!"
+        </code>
+      </div>
+
+      <div id="Classes">
+        <h3>Classes</h3>
+        <p><strong>Classes</strong> are collections of different variables and procedures. Classes usually talk to one another to make changes to data in order to work in a way that the user wants.</p>
+
+        <code>public class Main {
+              int x = 5;
+            }
+        </code>
+      </div>
+      <h3>References</h3>
+      <p>All documentation was referenced from the following sources:</p>
+      <ul>
+        <li><a href="https://www.w3schools.com/java/default.asp">W3Schools</a></li>
+        <li><a href="https://www.sololearn.com/learning/1068">SoloLearn-Java</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Java">Java MDN</a></li>
+        <li><a href="https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html">Oracle Java Documentation</a></li>
+      </ul>
+
+    </main>
+    <footer>
+      Copyright &copy Gregory M. Boone
+    </footer>
+  </body>
+</html>
